@@ -12,11 +12,22 @@ It uses a combination of sensors including; cameras, load cells, rfid scanners a
 - Construction of Bean Drop Station
 - Micro-controller software development
   - motor controllers
-  - sensor 
+  - sensor integration
+  - mqtt sim communication
 - Single board computer software development (GUI, Sound output, 
+  - customer GUI / HMI
+  - employee GUI / HMI
+  - Sound Output
+  - slave / master communication with micro-controller
+  - Database integration
+- Operational Deployment
 
+## Hardware (electrical & mechanical) test and selection
+Over a 2 year development cycle electronic hardware and mechnical hardware were tested continously in preparation for installation in a community and 
 
-## Python Libraries
+## Single board computer development
+A single board computer was used as the main unit to control the Bean Drop station. It acted as a Master communicating via I2C communcation protocol and serial communication to a number of micro-controllers. Interfaced with LCD Screens and e-paper displays, a number of switches/buttons and determined communications to be sent to database. The main program was written in python.
+### Python Libraries
 - cv2
 - datetime
 - imutils
@@ -37,7 +48,9 @@ It uses a combination of sensors including; cameras, load cells, rfid scanners a
 - time
 - tkinter
 
-## C++ Libraries
+## Micro Controller Development
+A number of micro controllers were used communicating via I2C communcation protocol and serial communication. Micro-controllers controlled motors, load cells, ldr laser modules, sim communication, limit switches, led's.
+### C++ Libraries
 - AccelStepper.h
 - ATOM_DTU_NB.h
 - HX711.h
