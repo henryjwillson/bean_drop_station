@@ -10,16 +10,16 @@ It uses a combination of sensors including; cameras, load cells, rfid scanners a
 - Circuit Diagram & PCB Designs
 - 3D CAD model and profile drawings for construction
 - Construction of Bean Drop Station
-- Micro-controller software development
-  - motor controllers
-  - sensor integration
-  - mqtt sim communication
-- Single board computer software development (GUI, Sound output, 
+- Single board computer software development 
   - customer GUI / HMI
   - employee GUI / HMI
   - Sound Output
   - slave / master communication with micro-controller
   - Database integration
+- Micro-controller software development
+  - motor controllers
+  - sensor integration
+  - mqtt sim communication
 - Operational Deployment
 
 ## Hardware (electrical & mechanical) test and selection
@@ -65,6 +65,9 @@ A number of micro controllers were used communicating via I2C communcation proto
 - HX711.h
 - M5Atom.h
 - wire.h
+
+## Operational Deployment
+Bean Drop station was successfully installed and operational as part of a public COP26 summit sustainability festival at EdgeHill University with students and staff alike allowed and encouraged to interact and demo the bean drop station. 
 
 ## Hidden / Removed Code
 The Bean Drop Station is a fundamental part of the Bean Drop Process Cycle and as such represents an important commercial asset. Code shown is limited for commercial sensitivity.
