@@ -23,7 +23,16 @@ It uses a combination of sensors including; cameras, load cells, rfid scanners a
 - Operational Deployment
 
 ## Hardware (electrical & mechanical) test and selection
-Over a 2 year development cycle electronic hardware and mechnical hardware were tested continously in preparation for installation in a community and 
+Over a 2 year development cycle electronic hardware and mechnical hardware were tested continously in preparation for installation in a community and daily public interaction. Components were tested robustly to meet a number of criteria, including reliability, accuracy, energy efficiency and cost. 
+
+## Circuit Diagram & PCB Designs
+Circuit diagrams were produced as part of the full design cycle, and PCB's manufactured to increase ease of component integration. PCB's were designed with best practice in mind and designed around components and pcb connectors which had been robustly tested.
+
+## 3D CAD model and profile drawings for construction
+3D models were produced for all custom components and for the Bean Drop station as a whole. Components were added to the model before installation enabling identification of issues before installation. The model includes a number of technical profile drawings to allow easy manufacture and assembly of bean drop stations.
+
+## Construction of Bean Drop Station
+The construction of the Bean Drop Station has been designed and constructed in a way that allows easy maintenance, a crucial component as the Bean Drop stations will remain permenantly out in the field without the ability to transfer them back into a workshop. The construction is split into removable modules allowing easy construction and easy in field maintenance.
 
 ## Single board computer development
 A single board computer was used as the main unit to control the Bean Drop station. It acted as a Master communicating via I2C communcation protocol and serial communication to a number of micro-controllers. Interfaced with LCD Screens and e-paper displays, a number of switches/buttons and determined communications to be sent to database. The main program was written in python.
