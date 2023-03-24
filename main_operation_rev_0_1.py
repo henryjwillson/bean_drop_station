@@ -300,7 +300,6 @@ def polling():
 		rfid_timeout += 1
 		if rfid_timeout >= 8:
 			return False
-			break
 		p1 = subprocess.run(["./rfidb1-tool /dev/ttyS0 uid"],capture_output=True,cwd="/home/pi/rfidb1-tool_v1.1", shell=True) #cwd = 'current working drive' which is used instead of os.chdir = operating system. child directory #setting text=True also 'decodes' result and passes it as a string
 		print(p1.stdout.decode()) #capure_output=True takes the response normally returned to console and returns it to the variable instead. stdout = standard output # .decode() method passes result out as a string eg. print(p1.stdout.decode())
 		time.sleep(0.25)
@@ -316,9 +315,7 @@ def polling():
 			# Adding Admin Controls
 			if decoded_cup_RFID == "XXX":
 				return "admin"
-				break
 			return True
-			break
 			
 # MicroController Queue Class
 micro_controller_queue = queue.Queue()
